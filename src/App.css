@@ -229,12 +229,13 @@ body {
     gap: 10px;
     margin-bottom: 0;
   }
-
-  .charts {
+  .charts-wrapper {
     grid-template-columns: 1fr;
-    margin-top: 30px;
   }
 
+  .chart-container:not(:last-child) {
+    margin-bottom: 20px;
+  }
   .icon.close_icon {
     display: block; /* Tampilkan ikon pada tampilan kecil */
   }
