@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { MdOutlineSpeed, MdHistory, MdQuestionMark, MdTrain, MdLocationOn } from 'react-icons/md'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
@@ -81,6 +80,7 @@ function Home() {
       <div className='charts-wrapper'>
         <div className='line-chart'>
           <ResponsiveContainer width="100%" height="100%">
+          <h3>Grafik kecepatan</h3>
             <LineChart
               width={500}
               height={300}
@@ -102,6 +102,7 @@ function Home() {
           </ResponsiveContainer>
         </div>
         <div className='gauge-chart'>
+        <h3>Gauge Chart</h3>
           <GaugeComponent arc={{
             subArcs: [
               {
